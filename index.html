@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div id="gallery">
+     <figure>
+       <img src="leopard-515509_1280.jpg" alt="leopard">
+       <figcaption>Leopard</figcaption>
+     </figure>
+     <figure>
+      <img src="cute-3258931_1280.jpg" alt="Cat">
+      <figcaption>Cat</figcaption>
+    </figure>
+    <figure>
+      <img src="Cute Husky.jpg" alt="Husky">
+      <figcaption>Husky</figcaption>
+    </figure>
+    <figure>
+      <img src="tiger-3264048_1280.jpg" alt="Royal Bengal Tiger">
+      <figcaption>Royal Bengal Tiger</figcaption>
+    </figure>
+   </div>
+   
+  <script>
+    var galleryimages = document.querySelectorAll("#gallery figure");
+
+    for(i=0; i<galleryimages.length; i++) {
+      galleryimages[i].addEventListener('click', function(){ this.classList.toggle("expanded"); gallery.classList.toggle("full")} );
+    }
+      
+  </script>
+</body>
+</html>
